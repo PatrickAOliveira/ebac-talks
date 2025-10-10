@@ -1,6 +1,7 @@
 @use "hero.scss";
 @use "./components/infos_bar";
 @use "./components/buttons";
+@use "event.scss";
 
 * {
     padding: 0;
@@ -9,4 +10,18 @@
     font-family: Roboto, sans-serif;
     color: #fff;
     list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
 }
