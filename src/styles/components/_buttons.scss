@@ -1,3 +1,5 @@
+@use "../var.scss";
+
 .button {
     padding: 12px;
     font-size: 18px;
@@ -7,8 +9,8 @@
     white-space: nowrap;
 
     &--primary {
-        color: #fff;
-        background-color: #4f2ac3;
+        color: var.$textColor1;
+        background-color: var.$btnColor;
     }
 
     @media (max-width:640px) {

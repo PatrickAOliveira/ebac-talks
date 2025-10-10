@@ -1,9 +1,33 @@
+@use "var.scss";
+
 .event {
     padding: 80px 0;
-    background-image: linear-gradient(#1b6ca7, #442bdb);
+
+    &--frontend {
+        background-image: linear-gradient(var.$blue1, var.$blue2);
+    }
+
+    &--ui-ux {
+        background-image: linear-gradient(var.$blue2, var.$pink);
+    }
+
+    &--data-science {
+        background-image: linear-gradient(var.$pink, var.$yellow);
+    }
+
+    &--backend {
+        background-image: linear-gradient(var.$yellow, var.$pink);
+    }
+
+    &--img-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
 
     .container {
         display: flex;
+        gap: 40px;
     }
 
     &__img {
@@ -11,8 +35,6 @@
     }
 
     &__details {
-        margin-right: 40px;
-
         &__title {
             font-size: 18px;
             font-weight: bold;
